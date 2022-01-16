@@ -1,0 +1,376 @@
+
+body{
+    box-sizing: border-box;
+    background-color: #F5F7FA;
+    
+
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+    line-height: 1.2; 
+}
+
+
+.site-title{
+    float: left;
+    font-size: 20px;
+    margin-top: 15px;
+    color: #154D52;
+}
+
+.site-nav{
+    float: right;
+}
+
+.clearfix::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.text-center h2{
+    color: white;
+}
+
+li{
+    background-color: #154D52;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 60%;
+}
+.fab{
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    
+}
+.fab:hover{
+    color: rgb(204, 200, 200);
+    font-size: 25px;
+    transform: scale(1.0);
+    
+}
+
+div{
+    display: block;
+}
+.clearfix{
+    width: 77%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+   
+}
+
+.page-content{
+    width:77% ;
+    margin: auto;
+}
+.cover-bg{
+    background-color: #154D52;
+    /*#4A89DC;*/
+}
+
+.about-section{
+    background-color: #E8F0F3;
+}
+.img{
+    vertical-align: middle;
+}
+.avatar {
+    max-width: 216px;
+    max-height: 216px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    
+}
+.avatar:hover {
+    transition: transform .18s ease-in-out;
+}
+.p-1 {
+    padding: 0.5rem!important;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.avatar img {
+    filter: grayscale(100%);
+}
+
+/*.progress-bar{
+    animation-name: bar;
+
+}*/
+
+
+
+.progress-bar{
+    position: relative;
+    animation: animate 4s ease-in alternate;
+    transition-property: opacity,transform;
+    opacity: 1
+    
+    
+    
+}
+
+@keyframes animate {
+    
+
+    from{
+        width: 20px;
+    }
+
+    to{
+        width: 500px;
+    }
+
+    
+}
+.card{
+
+    margin-bottom: 15px;
+    
+}
+
+#web{
+    color: white;
+}
+
+.text-center{
+    margin-top: 30px;
+   
+}
+
+.btn-light:hover{
+    background-color: #E8F0F3;
+}
+
+.pb-1{
+    color:#154D52 ;
+
+}
+.about{
+    color: #154D52;
+}
+.h3{
+    margin-top: 20px;
+}
+
+
+/* progress circle */
+
+.progress{
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    width: 100px;
+    height: 100px;
+    line-height: 150px;
+    position: relative;
+}
+.progress:after{
+    content: "";
+    border-radius: 50%;
+    border: 15px solid #f2f5f5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.progress > span{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    border-width: 15px;
+    border-style: solid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+    font-size: 24px;
+    color: #154D52;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+.progress.blue .progress-bar{
+    border-color: #154D52;
+}
+.progress.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+    border-color: #154D52;
+}
+.progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.pink .progress-bar{
+    border-color: #154D52;
+}
+.progress.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+
+.col-md-3{
+    width: 17%;
+}
+.progress-round{
+    margin-top: 25px;
+}
+
+.progress .progress-value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.newrow{
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-text{
+    color: #154D52;
+
+}
+.container-form{
+    width: 80%;
+    margin: auto;
+}
+
+.contant-section{
+    text-align: center;
+}
+
+.formrow{
+    text-align: center;
+}
+
+.row{
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media(max-width:770px){
+    .newrow{
+        flex-direction: column;
+    }
+    .progress{
+        margin-bottom: 20px;
+    }
+    .col-md-3{
+       width: 45%;
+    }
+
+    .clearfix{
+        width: 65%;
+
+    }
+    .site-title{
+        font-size: 22px;
+    }
+}
